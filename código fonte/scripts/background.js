@@ -4,7 +4,7 @@ let seconds;
 let isPaused = false;
 
 function playAlarm() {
-  let alarm = new Audio(browser.runtime.getURL("alarm.mp3"));
+  let alarm = new Audio(browser.runtime.getURL("/código fonte/audios/alarme.mp3"));
   alarm.play();
   showNotification();
 }
@@ -72,7 +72,7 @@ browser.runtime.onMessage.addListener(function(message) {
 function showNotification() {
   browser.notifications.create({
     type: "basic",
-    iconUrl: browser.runtime.getURL("icon.png"),
+    iconUrl: browser.runtime.getURL("/código fonte/estilos/icon.png"),
     title: "Pomodoro Timer",
     message: "O cronômetro zerou!",
   });

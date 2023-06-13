@@ -1,31 +1,22 @@
 {
     "manifest_version": 2,
     "name": "Estude Em Pomodoro",
+    
     "version": "1.0",
     "description": "Extensão Timer Pomodoro para gerenciar sessões de estudo e descanso",
     "icons": {
-      "48": "icon.png"
+      "48": "/código fonte/estilos/icon.png"
     },
     "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
+      "default_popup": "/código fonte/painel_html/popup.html",
+      "default_icon": "/código fonte/estilos/icon.png"
     },
     "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-    "permissions": ["activeTab"],
-
-    
-    "background": {
-      "scripts": [
-        "background.js"
-      ],
+      "scripts": ["/código fonte/scripts/background.js"],
       "persistent": true
     },
-    "permissions": [
-      "notifications"
-    ]
+    "permissions": ["activeTab",
+                   "notifications"]
     
   }
   
