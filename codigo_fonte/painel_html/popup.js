@@ -70,7 +70,7 @@ function formatTime(time) {
 function resizeWindow(width, height) {
   browser.windows.getCurrent().then(function(window) {
     browser.windows.create({
-      url: browser.extension.getURL("/código fonte/painel_html/popup.html"),
+      url: browser.extension.getURL("popup.html"),
       type: "popup",
       width: width,
       height: height
